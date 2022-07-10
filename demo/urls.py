@@ -26,7 +26,4 @@ admin.site.index_title="MegaByte"
 urlpatterns = [
     path('483650905687263869583748572945/', admin.site.urls),
     path('', include('demo_server.urls')),
-
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
