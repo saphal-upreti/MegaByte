@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'MegaByte.css' %}">
+    
+    <title>
+    
+        Login | Demo
+    
+    </title>
+    {% load static %}
+    <link rel="icon" href="{% static 'logo.png' %}" type="logo/png">
+</head>
+
+<body>
+
+        <form id="form" method="post" onsubmit="return login()" action="/login" data-netlify="true">
+            {% csrf_token %}
+            <div class="elements">
+                <div class="image">
+
+                    {% load static %}
+                    <a href="/">
+                        <img src="{% static 'logo.png' %}" href="/">
+                    </a>    
+
+                </div>
+                <div class="content">
+                    <a href="/">
+                        <p id="name">MegaByte</p>
+                    </a>
+                    <div class="form-floating mb-3">
+                        
+                        <input type="text" class="form-control" name="username" placeholder="Username" id="username">
+                    
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+
+                        <input type="password" name="password" class="form-control" placeholder="Password" id="password">
+
+                    </div>
+
+                    <div class="submit">
+
+                        <input name="submit" type="submit" placeholder="Submit" class="form-control" id="submit">
+
+                    </div>
+                </div>
+            </div>    
+        </form>
+        
+        {% load static %}
+        <script type="text/Javascript" src="{% static 'login.js' %}">
+
+    </script>
+
+</body>
+</html>

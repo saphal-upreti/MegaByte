@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block background %}{% load static %} background="{% static 'background.jpg' %}"{% endblock background %}
+{% block body %}
+{% load static %}
+
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+
+{% endblock body %} 

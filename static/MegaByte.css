@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    background:yellow;
+}
+#username{
+
+    padding: 20px;
+}
+#password{
+
+    padding: 20px;
+
+    
+}
+#submit{
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.content{
+    background-color: white;
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.elements{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#name{
+    font-size: 30px;
+}
+
