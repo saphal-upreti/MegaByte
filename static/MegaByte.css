@@ -1,7 +1,8 @@
 body{
     display: flex;
     justify-content: center;
-    background:yellow;
+    background:white;
+    margin-top: 150px;
 }
 #username{
 
@@ -14,25 +15,40 @@ body{
     
 }
 #submit{
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 5px;
 }
 
 .content{
-    background-color: white;
+    background-color: black;
     padding: 50px;
     border-radius: 25px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
-.elements{
+#name{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 35px;
+    margin-bottom: 45px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-}
-#name{
-    font-size: 30px;
+    flex-direction: row;
+    text-decoration: none;
 }
 
+.image{
+    width: 50px;
+    height: 100px;
+}
+#text-name{
+    text-decoration: none;
+}
+
+#remember{
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+}
