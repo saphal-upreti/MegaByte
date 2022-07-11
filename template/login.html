@@ -22,15 +22,12 @@
         <form id="form" method="post" onsubmit="return login()" action="/login" data-netlify="true">
             {% csrf_token %}
             <div class="elements">
-                <a class="navbar-brand" id="name" href="/">
+                <div class="content">
+                    <a class="navbar-brand" id="name" href="/">
                       {% load static %}
                       <img src="{% static 'logo.png' %}" alt="" width="50" height="45" class="d-inline-block align-text-top" id="logo">
                       MegaByte
                  </a>
-                <div class="content">
-                    <a href="/">
-                        <p id="name">MegaByte</p>
-                    </a>
                     <div class="form-floating mb-3">
                         
                         <input type="text" class="form-control" name="username" placeholder="Username" id="username">
